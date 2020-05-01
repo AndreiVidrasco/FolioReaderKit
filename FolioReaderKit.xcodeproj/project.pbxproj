@@ -1,981 +1,1505 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		OBJ_104 /* FRBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* FRBook.swift */; };
-		OBJ_105 /* FREpubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* FREpubParser.swift */; };
-		OBJ_106 /* FRMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* FRMetadata.swift */; };
-		OBJ_107 /* FRResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* FRResource.swift */; };
-		OBJ_108 /* FRResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* FRResources.swift */; };
-		OBJ_109 /* FRSmilElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FRSmilElement.swift */; };
-		OBJ_110 /* FRSmils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FRSmils.swift */; };
-		OBJ_111 /* FRSpine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FRSpine.swift */; };
-		OBJ_112 /* FRTocReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* FRTocReference.swift */; };
-		OBJ_113 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* MediaType.swift */; };
-		OBJ_114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Extensions.swift */; };
-		OBJ_116 /* FolioReaderAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* FolioReaderAudioPlayer.swift */; };
-		OBJ_117 /* FolioReaderCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* FolioReaderCenter.swift */; };
-		OBJ_118 /* FolioReaderChapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* FolioReaderChapterList.swift */; };
-		OBJ_119 /* FolioReaderChapterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* FolioReaderChapterListCell.swift */; };
-		OBJ_120 /* FolioReaderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* FolioReaderConfig.swift */; };
-		OBJ_121 /* FolioReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* FolioReaderContainer.swift */; };
-		OBJ_122 /* FolioReaderFontsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* FolioReaderFontsMenu.swift */; };
-		OBJ_124 /* FolioReaderKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* FolioReaderKit.swift */; };
-		OBJ_125 /* FolioReaderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* FolioReaderPage.swift */; };
-		OBJ_126 /* FolioReaderPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* FolioReaderPageIndicator.swift */; };
-		OBJ_127 /* FolioReaderPlayerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FolioReaderPlayerMenu.swift */; };
-		OBJ_128 /* FolioReaderQuoteShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* FolioReaderQuoteShare.swift */; };
-		OBJ_129 /* FolioReaderSharingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* FolioReaderSharingProvider.swift */; };
-		OBJ_130 /* FolioReaderUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* FolioReaderUserDefaults.swift */; };
-		OBJ_131 /* FolioReaderWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* FolioReaderWebView.swift */; };
-		OBJ_132 /* Highlight+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Highlight+Helper.swift */; };
-		OBJ_134 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* PageViewController.swift */; };
-		OBJ_135 /* QuoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* QuoteImage.swift */; };
-		OBJ_136 /* ScrollScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ScrollScrubber.swift */; };
-		OBJ_138 /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ZipArchive::ZipArchive::Product" /* ZipArchive.framework */; };
-		OBJ_139 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AEXML::AEXML::Product" /* AEXML.framework */; };
-		OBJ_148 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_153 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* SSZipArchive.m */; };
-		OBJ_154 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* mz_compat.c */; };
-		OBJ_155 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* mz_crypt.c */; };
-		OBJ_156 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* mz_crypt_apple.c */; };
-		OBJ_157 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* mz_os.c */; };
-		OBJ_158 /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* mz_os_posix.c */; };
-		OBJ_159 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* mz_strm.c */; };
-		OBJ_160 /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* mz_strm_buf.c */; };
-		OBJ_161 /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* mz_strm_mem.c */; };
-		OBJ_162 /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* mz_strm_os_posix.c */; };
-		OBJ_163 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* mz_strm_pkcrypt.c */; };
-		OBJ_164 /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* mz_strm_split.c */; };
-		OBJ_165 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* mz_strm_wzaes.c */; };
-		OBJ_166 /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* mz_strm_zlib.c */; };
-		OBJ_167 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* mz_zip.c */; };
-		OBJ_168 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* mz_zip_rw.c */; };
-		OBJ_170 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		OBJ_171 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		OBJ_172 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		OBJ_179 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Package.swift */; };
-		OBJ_87 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Document.swift */; };
-		OBJ_88 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Element.swift */; };
-		OBJ_89 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Error.swift */; };
-		OBJ_90 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Options.swift */; };
-		OBJ_91 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Parser.swift */; };
-		OBJ_98 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Package.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		75303CC8245CB6DF004CB95C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ZipArchive::ZipArchive";
-			remoteInfo = ZipArchive;
-		};
-		75303CC9245CB6DF004CB95C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "AEXML::AEXML";
-			remoteInfo = AEXML;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		"AEXML::AEXML::Product" /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"FolioReaderKit::FolioReaderKit::Product" /* FolioReaderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FolioReaderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* FRBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRBook.swift; sourceTree = "<group>"; };
-		OBJ_11 /* FREpubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FREpubParser.swift; sourceTree = "<group>"; };
-		OBJ_12 /* FRMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMetadata.swift; sourceTree = "<group>"; };
-		OBJ_13 /* FRResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRResource.swift; sourceTree = "<group>"; };
-		OBJ_14 /* FRResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRResources.swift; sourceTree = "<group>"; };
-		OBJ_15 /* FRSmilElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRSmilElement.swift; sourceTree = "<group>"; };
-		OBJ_16 /* FRSmils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRSmils.swift; sourceTree = "<group>"; };
-		OBJ_17 /* FRSpine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRSpine.swift; sourceTree = "<group>"; };
-		OBJ_18 /* FRTocReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRTocReference.swift; sourceTree = "<group>"; };
-		OBJ_19 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		OBJ_22 /* FolioReaderAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderAudioPlayer.swift; sourceTree = "<group>"; };
-		OBJ_23 /* FolioReaderCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderCenter.swift; sourceTree = "<group>"; };
-		OBJ_24 /* FolioReaderChapterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderChapterList.swift; sourceTree = "<group>"; };
-		OBJ_25 /* FolioReaderChapterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderChapterListCell.swift; sourceTree = "<group>"; };
-		OBJ_26 /* FolioReaderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderConfig.swift; sourceTree = "<group>"; };
-		OBJ_27 /* FolioReaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderContainer.swift; sourceTree = "<group>"; };
-		OBJ_28 /* FolioReaderFontsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderFontsMenu.swift; sourceTree = "<group>"; };
-		OBJ_30 /* FolioReaderKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderKit.swift; sourceTree = "<group>"; };
-		OBJ_31 /* FolioReaderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderPage.swift; sourceTree = "<group>"; };
-		OBJ_32 /* FolioReaderPageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderPageIndicator.swift; sourceTree = "<group>"; };
-		OBJ_33 /* FolioReaderPlayerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderPlayerMenu.swift; sourceTree = "<group>"; };
-		OBJ_34 /* FolioReaderQuoteShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderQuoteShare.swift; sourceTree = "<group>"; };
-		OBJ_35 /* FolioReaderSharingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderSharingProvider.swift; sourceTree = "<group>"; };
-		OBJ_36 /* FolioReaderUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderUserDefaults.swift; sourceTree = "<group>"; };
-		OBJ_37 /* FolioReaderWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderWebView.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Highlight+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Highlight+Helper.swift"; sourceTree = "<group>"; };
-		OBJ_41 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		OBJ_42 /* QuoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteImage.swift; sourceTree = "<group>"; };
-		OBJ_43 /* ScrollScrubber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollScrubber.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/andrei/Projects/FolioReaderKit/.build/checkouts/ZipArchive/Package.swift; sourceTree = "<group>"; };
-		OBJ_48 /* SSZipArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
-		OBJ_50 /* mz_compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_compat.c; sourceTree = "<group>"; };
-		OBJ_51 /* mz_crypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_crypt.c; sourceTree = "<group>"; };
-		OBJ_52 /* mz_crypt_apple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_crypt_apple.c; sourceTree = "<group>"; };
-		OBJ_53 /* mz_os.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_os.c; sourceTree = "<group>"; };
-		OBJ_54 /* mz_os_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_os_posix.c; sourceTree = "<group>"; };
-		OBJ_55 /* mz_strm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm.c; sourceTree = "<group>"; };
-		OBJ_56 /* mz_strm_buf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_buf.c; sourceTree = "<group>"; };
-		OBJ_57 /* mz_strm_mem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_mem.c; sourceTree = "<group>"; };
-		OBJ_58 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_os_posix.c; sourceTree = "<group>"; };
-		OBJ_59 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_pkcrypt.c; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* mz_strm_split.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_split.c; sourceTree = "<group>"; };
-		OBJ_61 /* mz_strm_wzaes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_wzaes.c; sourceTree = "<group>"; };
-		OBJ_62 /* mz_strm_zlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_strm_zlib.c; sourceTree = "<group>"; };
-		OBJ_63 /* mz_zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_zip.c; sourceTree = "<group>"; };
-		OBJ_64 /* mz_zip_rw.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mz_zip_rw.c; sourceTree = "<group>"; };
-		OBJ_66 /* ZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		OBJ_67 /* SSZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
-		OBJ_68 /* SSZipCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
-		OBJ_71 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		OBJ_72 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
-		OBJ_73 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		OBJ_76 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/andrei/Projects/FolioReaderKit/.build/checkouts/AEXML/Package.swift; sourceTree = "<group>"; };
-		OBJ_81 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
-		"ZipArchive::ZipArchive::Product" /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_137 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_138 /* ZipArchive.framework in Frameworks */,
-				OBJ_139 /* AEXML.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_173 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_92 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		OBJ_38 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_39 /* Highlight+Helper.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_44 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_45 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_46 /* ZipArchive */,
-				OBJ_69 /* AEXML 4.5.0 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_46 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_47 /* Package.swift */,
-				OBJ_48 /* SSZipArchive.m */,
-				OBJ_49 /* minizip */,
-				OBJ_65 /* include */,
-			);
-			name = ZipArchive;
-			path = .build/checkouts/ZipArchive/SSZipArchive;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_49 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_50 /* mz_compat.c */,
-				OBJ_51 /* mz_crypt.c */,
-				OBJ_52 /* mz_crypt_apple.c */,
-				OBJ_53 /* mz_os.c */,
-				OBJ_54 /* mz_os_posix.c */,
-				OBJ_55 /* mz_strm.c */,
-				OBJ_56 /* mz_strm_buf.c */,
-				OBJ_57 /* mz_strm_mem.c */,
-				OBJ_58 /* mz_strm_os_posix.c */,
-				OBJ_59 /* mz_strm_pkcrypt.c */,
-				OBJ_60 /* mz_strm_split.c */,
-				OBJ_61 /* mz_strm_wzaes.c */,
-				OBJ_62 /* mz_strm_zlib.c */,
-				OBJ_63 /* mz_zip.c */,
-				OBJ_64 /* mz_zip_rw.c */,
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_44 /* Tests */,
-				OBJ_45 /* Dependencies */,
-				OBJ_77 /* Products */,
-				OBJ_81 /* Example */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_65 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_66 /* ZipArchive.h */,
-				OBJ_67 /* SSZipArchive.h */,
-				OBJ_68 /* SSZipCommon.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_69 /* AEXML 4.5.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_70 /* AEXML */,
-				OBJ_76 /* Package.swift */,
-			);
-			name = "AEXML 4.5.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* FolioReaderKit */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_70 /* AEXML */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_71 /* Document.swift */,
-				OBJ_72 /* Element.swift */,
-				OBJ_73 /* Error.swift */,
-				OBJ_74 /* Options.swift */,
-				OBJ_75 /* Parser.swift */,
-			);
-			name = AEXML;
-			path = .build/checkouts/AEXML/Sources/AEXML;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_77 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"FolioReaderKit::FolioReaderKit::Product" /* FolioReaderKit.framework */,
-				"ZipArchive::ZipArchive::Product" /* ZipArchive.framework */,
-				"AEXML::AEXML::Product" /* AEXML.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_8 /* FolioReaderKit */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* EPUBCore */,
-				OBJ_20 /* Extensions.swift */,
-				OBJ_22 /* FolioReaderAudioPlayer.swift */,
-				OBJ_23 /* FolioReaderCenter.swift */,
-				OBJ_24 /* FolioReaderChapterList.swift */,
-				OBJ_25 /* FolioReaderChapterListCell.swift */,
-				OBJ_26 /* FolioReaderConfig.swift */,
-				OBJ_27 /* FolioReaderContainer.swift */,
-				OBJ_28 /* FolioReaderFontsMenu.swift */,
-				OBJ_30 /* FolioReaderKit.swift */,
-				OBJ_31 /* FolioReaderPage.swift */,
-				OBJ_32 /* FolioReaderPageIndicator.swift */,
-				OBJ_33 /* FolioReaderPlayerMenu.swift */,
-				OBJ_34 /* FolioReaderQuoteShare.swift */,
-				OBJ_35 /* FolioReaderSharingProvider.swift */,
-				OBJ_36 /* FolioReaderUserDefaults.swift */,
-				OBJ_37 /* FolioReaderWebView.swift */,
-				OBJ_38 /* Models */,
-				OBJ_41 /* PageViewController.swift */,
-				OBJ_42 /* QuoteImage.swift */,
-				OBJ_43 /* ScrollScrubber.swift */,
-			);
-			name = FolioReaderKit;
-			path = Source/FolioReaderKit;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_9 /* EPUBCore */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_10 /* FRBook.swift */,
-				OBJ_11 /* FREpubParser.swift */,
-				OBJ_12 /* FRMetadata.swift */,
-				OBJ_13 /* FRResource.swift */,
-				OBJ_14 /* FRResources.swift */,
-				OBJ_15 /* FRSmilElement.swift */,
-				OBJ_16 /* FRSmils.swift */,
-				OBJ_17 /* FRSpine.swift */,
-				OBJ_18 /* FRTocReference.swift */,
-				OBJ_19 /* MediaType.swift */,
-			);
-			path = EPUBCore;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		OBJ_169 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_170 /* ZipArchive.h in Headers */,
-				OBJ_171 /* SSZipArchive.h in Headers */,
-				OBJ_172 /* SSZipCommon.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		"AEXML::AEXML" /* AEXML */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_83 /* Build configuration list for PBXNativeTarget "AEXML" */;
-			buildPhases = (
-				OBJ_86 /* Sources */,
-				OBJ_92 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AEXML;
-			productName = AEXML;
-			productReference = "AEXML::AEXML::Product" /* AEXML.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"AEXML::SwiftPMPackageDescription" /* AEXMLPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "AEXMLPackageDescription" */;
-			buildPhases = (
-				OBJ_97 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AEXMLPackageDescription;
-			productName = AEXMLPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"FolioReaderKit::FolioReaderKit" /* FolioReaderKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_100 /* Build configuration list for PBXNativeTarget "FolioReaderKit" */;
-			buildPhases = (
-				OBJ_103 /* Sources */,
-				OBJ_137 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_140 /* PBXTargetDependency */,
-				OBJ_142 /* PBXTargetDependency */,
-			);
-			name = FolioReaderKit;
-			productName = FolioReaderKit;
-			productReference = "FolioReaderKit::FolioReaderKit::Product" /* FolioReaderKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"FolioReaderKit::SwiftPMPackageDescription" /* FolioReaderKitPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_144 /* Build configuration list for PBXNativeTarget "FolioReaderKitPackageDescription" */;
-			buildPhases = (
-				OBJ_147 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FolioReaderKitPackageDescription;
-			productName = FolioReaderKitPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"ZipArchive::SwiftPMPackageDescription" /* ZipArchivePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_175 /* Build configuration list for PBXNativeTarget "ZipArchivePackageDescription" */;
-			buildPhases = (
-				OBJ_178 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ZipArchivePackageDescription;
-			productName = ZipArchivePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"ZipArchive::ZipArchive" /* ZipArchive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_149 /* Build configuration list for PBXNativeTarget "ZipArchive" */;
-			buildPhases = (
-				OBJ_152 /* Sources */,
-				OBJ_169 /* Headers */,
-				OBJ_173 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ZipArchive;
-			productName = ZipArchive;
-			productReference = "ZipArchive::ZipArchive::Product" /* ZipArchive.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "FolioReaderKit" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_77 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"AEXML::AEXML" /* AEXML */,
-				"AEXML::SwiftPMPackageDescription" /* AEXMLPackageDescription */,
-				"FolioReaderKit::FolioReaderKit" /* FolioReaderKit */,
-				"FolioReaderKit::SwiftPMPackageDescription" /* FolioReaderKitPackageDescription */,
-				"ZipArchive::ZipArchive" /* ZipArchive */,
-				"ZipArchive::SwiftPMPackageDescription" /* ZipArchivePackageDescription */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_103 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_104 /* FRBook.swift in Sources */,
-				OBJ_105 /* FREpubParser.swift in Sources */,
-				OBJ_106 /* FRMetadata.swift in Sources */,
-				OBJ_107 /* FRResource.swift in Sources */,
-				OBJ_108 /* FRResources.swift in Sources */,
-				OBJ_109 /* FRSmilElement.swift in Sources */,
-				OBJ_110 /* FRSmils.swift in Sources */,
-				OBJ_111 /* FRSpine.swift in Sources */,
-				OBJ_112 /* FRTocReference.swift in Sources */,
-				OBJ_113 /* MediaType.swift in Sources */,
-				OBJ_114 /* Extensions.swift in Sources */,
-				OBJ_116 /* FolioReaderAudioPlayer.swift in Sources */,
-				OBJ_117 /* FolioReaderCenter.swift in Sources */,
-				OBJ_118 /* FolioReaderChapterList.swift in Sources */,
-				OBJ_119 /* FolioReaderChapterListCell.swift in Sources */,
-				OBJ_120 /* FolioReaderConfig.swift in Sources */,
-				OBJ_121 /* FolioReaderContainer.swift in Sources */,
-				OBJ_122 /* FolioReaderFontsMenu.swift in Sources */,
-				OBJ_124 /* FolioReaderKit.swift in Sources */,
-				OBJ_125 /* FolioReaderPage.swift in Sources */,
-				OBJ_126 /* FolioReaderPageIndicator.swift in Sources */,
-				OBJ_127 /* FolioReaderPlayerMenu.swift in Sources */,
-				OBJ_128 /* FolioReaderQuoteShare.swift in Sources */,
-				OBJ_129 /* FolioReaderSharingProvider.swift in Sources */,
-				OBJ_130 /* FolioReaderUserDefaults.swift in Sources */,
-				OBJ_131 /* FolioReaderWebView.swift in Sources */,
-				OBJ_132 /* Highlight+Helper.swift in Sources */,
-				OBJ_134 /* PageViewController.swift in Sources */,
-				OBJ_135 /* QuoteImage.swift in Sources */,
-				OBJ_136 /* ScrollScrubber.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_147 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_148 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_152 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_153 /* SSZipArchive.m in Sources */,
-				OBJ_154 /* mz_compat.c in Sources */,
-				OBJ_155 /* mz_crypt.c in Sources */,
-				OBJ_156 /* mz_crypt_apple.c in Sources */,
-				OBJ_157 /* mz_os.c in Sources */,
-				OBJ_158 /* mz_os_posix.c in Sources */,
-				OBJ_159 /* mz_strm.c in Sources */,
-				OBJ_160 /* mz_strm_buf.c in Sources */,
-				OBJ_161 /* mz_strm_mem.c in Sources */,
-				OBJ_162 /* mz_strm_os_posix.c in Sources */,
-				OBJ_163 /* mz_strm_pkcrypt.c in Sources */,
-				OBJ_164 /* mz_strm_split.c in Sources */,
-				OBJ_165 /* mz_strm_wzaes.c in Sources */,
-				OBJ_166 /* mz_strm_zlib.c in Sources */,
-				OBJ_167 /* mz_zip.c in Sources */,
-				OBJ_168 /* mz_zip_rw.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_178 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_179 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_87 /* Document.swift in Sources */,
-				OBJ_88 /* Element.swift in Sources */,
-				OBJ_89 /* Error.swift in Sources */,
-				OBJ_90 /* Options.swift in Sources */,
-				OBJ_91 /* Parser.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_98 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_140 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "ZipArchive::ZipArchive" /* ZipArchive */;
-			targetProxy = 75303CC8245CB6DF004CB95C /* PBXContainerItemProxy */;
-		};
-		OBJ_142 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "AEXML::AEXML" /* AEXML */;
-			targetProxy = 75303CC9245CB6DF004CB95C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_101 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include",
-				);
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/FolioReaderKit_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = FolioReaderKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = FolioReaderKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_102 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include",
-				);
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/FolioReaderKit_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = FolioReaderKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = FolioReaderKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_145 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_146 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_150 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_INTTYPES_H,
-					HAVE_PKCRYPT,
-					HAVE_STDINT_H,
-					HAVE_WZAES,
-					HAVE_ZLIB,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include",
-				);
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/ZipArchive_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					Security,
-					"-lz",
-					"-liconv",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ZipArchive;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = ZipArchive;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_151 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					HAVE_INTTYPES_H,
-					HAVE_PKCRYPT,
-					HAVE_STDINT_H,
-					HAVE_WZAES,
-					HAVE_ZLIB,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include",
-				);
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/ZipArchive_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					Security,
-					"-lz",
-					"-liconv",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ZipArchive;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				TARGET_NAME = ZipArchive;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_177 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-					"DEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_84 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/AEXML_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = AEXML;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = AEXML;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = FolioReaderKit.xcodeproj/AEXML_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = AEXML;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = AEXML;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_100 /* Build configuration list for PBXNativeTarget "FolioReaderKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_101 /* Debug */,
-				OBJ_102 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_144 /* Build configuration list for PBXNativeTarget "FolioReaderKitPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_145 /* Debug */,
-				OBJ_146 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_149 /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_150 /* Debug */,
-				OBJ_151 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_175 /* Build configuration list for PBXNativeTarget "ZipArchivePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_176 /* Debug */,
-				OBJ_177 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "FolioReaderKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_83 /* Build configuration list for PBXNativeTarget "AEXML" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_84 /* Debug */,
-				OBJ_85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_94 /* Build configuration list for PBXNativeTarget "AEXMLPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "AEXML::AEXML" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_80";
+         buildPhases = (
+            "OBJ_83",
+            "OBJ_89"
+         );
+         dependencies = (
+         );
+         name = "AEXML";
+         productName = "AEXML";
+         productReference = "AEXML::AEXML::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "AEXML::AEXML::Product" = {
+         isa = "PBXFileReference";
+         path = "AEXML.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "AEXML::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_91";
+         buildPhases = (
+            "OBJ_94"
+         );
+         dependencies = (
+         );
+         name = "AEXMLPackageDescription";
+         productName = "AEXMLPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "FolioReaderKit::FolioReaderKit" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_97";
+         buildPhases = (
+            "OBJ_100",
+            "OBJ_131"
+         );
+         dependencies = (
+            "OBJ_134",
+            "OBJ_136"
+         );
+         name = "FolioReaderKit";
+         productName = "FolioReaderKit";
+         productReference = "FolioReaderKit::FolioReaderKit::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "FolioReaderKit::FolioReaderKit::Product" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderKit.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "FolioReaderKit::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_138";
+         buildPhases = (
+            "OBJ_141"
+         );
+         dependencies = (
+         );
+         name = "FolioReaderKitPackageDescription";
+         productName = "FolioReaderKitPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_74";
+         projectDirPath = ".";
+         targets = (
+            "AEXML::AEXML",
+            "AEXML::SwiftPMPackageDescription",
+            "FolioReaderKit::FolioReaderKit",
+            "FolioReaderKit::SwiftPMPackageDescription",
+            "ZipArchive::ZipArchive",
+            "ZipArchive::SwiftPMPackageDescription"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "FRBook.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114",
+            "OBJ_115",
+            "OBJ_116",
+            "OBJ_117",
+            "OBJ_118",
+            "OBJ_119",
+            "OBJ_120",
+            "OBJ_121",
+            "OBJ_122",
+            "OBJ_123",
+            "OBJ_124",
+            "OBJ_125",
+            "OBJ_126",
+            "OBJ_127",
+            "OBJ_128",
+            "OBJ_129",
+            "OBJ_130"
+         );
+      };
+      "OBJ_101" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_102" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_103" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_104" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_105" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_106" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
+      };
+      "OBJ_107" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_108" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_109" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "FREpubParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_111" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_112" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_113" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_114" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_115" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_116" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_117" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_118" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_119" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "FRMetadata.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_120" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_121" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_122" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_123" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_124" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_125" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_126" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_127" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_128" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
+      };
+      "OBJ_129" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "FRResource.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_130" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_131" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_132",
+            "OBJ_133"
+         );
+      };
+      "OBJ_132" = {
+         isa = "PBXBuildFile";
+         fileRef = "ZipArchive::ZipArchive::Product";
+      };
+      "OBJ_133" = {
+         isa = "PBXBuildFile";
+         fileRef = "AEXML::AEXML::Product";
+      };
+      "OBJ_134" = {
+         isa = "PBXTargetDependency";
+         target = "ZipArchive::ZipArchive";
+      };
+      "OBJ_136" = {
+         isa = "PBXTargetDependency";
+         target = "AEXML::AEXML";
+      };
+      "OBJ_138" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_139",
+            "OBJ_140"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_139" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "FRResources.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_141" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_142"
+         );
+      };
+      "OBJ_142" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_143" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_144",
+            "OBJ_145"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_144" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "HAVE_INTTYPES_H",
+               "HAVE_PKCRYPT",
+               "HAVE_STDINT_H",
+               "HAVE_WZAES",
+               "HAVE_ZLIB"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/ZipArchive_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "Security",
+               "-lz",
+               "-liconv"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ZipArchive";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "ZipArchive";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_145" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "HAVE_INTTYPES_H",
+               "HAVE_PKCRYPT",
+               "HAVE_STDINT_H",
+               "HAVE_WZAES",
+               "HAVE_ZLIB"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/ZipArchive_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "Security",
+               "-lz",
+               "-liconv"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ZipArchive";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "ZipArchive";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_146" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_147",
+            "OBJ_148",
+            "OBJ_149",
+            "OBJ_150",
+            "OBJ_151",
+            "OBJ_152",
+            "OBJ_153",
+            "OBJ_154",
+            "OBJ_155",
+            "OBJ_156",
+            "OBJ_157",
+            "OBJ_158",
+            "OBJ_159",
+            "OBJ_160",
+            "OBJ_161",
+            "OBJ_162"
+         );
+      };
+      "OBJ_147" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_148" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_47";
+      };
+      "OBJ_149" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_48";
+      };
+      "OBJ_15" = {
+         isa = "PBXFileReference";
+         path = "FRSmilElement.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_150" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_151" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_50";
+      };
+      "OBJ_152" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_153" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_154" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_53";
+      };
+      "OBJ_155" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
+      };
+      "OBJ_156" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_55";
+      };
+      "OBJ_157" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_158" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_57";
+      };
+      "OBJ_159" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "FRSmils.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_160" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_161" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_162" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_163" = {
+         isa = "PBXHeadersBuildPhase";
+         files = (
+            "OBJ_164",
+            "OBJ_165",
+            "OBJ_166"
+         );
+      };
+      "OBJ_164" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_165" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_166" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_65";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_167" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_169" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_170",
+            "OBJ_171"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "FRSpine.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_170" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_171" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_172" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_173"
+         );
+      };
+      "OBJ_173" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "FRTocReference.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "MediaType.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "Extensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderAudioPlayer.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderCenter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderChapterList.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderChapterListCell.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderConfig.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderContainer.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderFontsMenu.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderKit.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderPage.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderPageIndicator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderPlayerMenu.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderQuoteShare.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderSharingProvider.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderUserDefaults.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "FolioReaderWebView.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_37"
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Highlight+Helper.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "PageViewController.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "QuoteImage.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "ScrollScrubber.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_42" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_43",
+            "OBJ_66"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_44",
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_62"
+         );
+         name = "ZipArchive";
+         path = ".build/checkouts/ZipArchive/SSZipArchive";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/andrei/Projects/FolioReaderKit/.build/checkouts/ZipArchive/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         path = "SSZipArchive.m";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52",
+            "OBJ_53",
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61"
+         );
+         name = "minizip";
+         path = "minizip";
+         sourceTree = "<group>";
+      };
+      "OBJ_47" = {
+         isa = "PBXFileReference";
+         path = "mz_compat.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "mz_crypt.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "mz_crypt_apple.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_41",
+            "OBJ_42",
+            "OBJ_74",
+            "OBJ_78"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXFileReference";
+         path = "mz_os.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "mz_os_posix.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "mz_strm.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_buf.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_54" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_mem.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_55" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_os_posix.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_56" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_pkcrypt.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_split.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_58" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_wzaes.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "PBXFileReference";
+         path = "mz_strm_zlib.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXFileReference";
+         path = "mz_zip.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "PBXFileReference";
+         path = "mz_zip_rw.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_63" = {
+         isa = "PBXFileReference";
+         path = "ZipArchive.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_64" = {
+         isa = "PBXFileReference";
+         path = "SSZipArchive.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_65" = {
+         isa = "PBXFileReference";
+         path = "SSZipCommon.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_66" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_67",
+            "OBJ_73"
+         );
+         name = "AEXML 4.5.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_67" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72"
+         );
+         name = "AEXML";
+         path = ".build/checkouts/AEXML/Sources/AEXML";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "Document.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "Element.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXFileReference";
+         path = "Error.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_71" = {
+         isa = "PBXFileReference";
+         path = "Options.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_72" = {
+         isa = "PBXFileReference";
+         path = "Parser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_73" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/andrei/Projects/FolioReaderKit/.build/checkouts/AEXML/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_74" = {
+         isa = "PBXGroup";
+         children = (
+            "FolioReaderKit::FolioReaderKit::Product",
+            "AEXML::AEXML::Product",
+            "ZipArchive::ZipArchive::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_78" = {
+         isa = "PBXFileReference";
+         path = "Example";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35",
+            "OBJ_36",
+            "OBJ_38",
+            "OBJ_39",
+            "OBJ_40"
+         );
+         name = "FolioReaderKit";
+         path = "Source/FolioReaderKit";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_81",
+            "OBJ_82"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_81" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/AEXML_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "AEXML";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "AEXML";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_82" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/AEXML_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "AEXML";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "AEXML";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Release";
+      };
+      "OBJ_83" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_84",
+            "OBJ_85",
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88"
+         );
+      };
+      "OBJ_84" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_85" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_86" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_70";
+      };
+      "OBJ_87" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_88" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_72";
+      };
+      "OBJ_89" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_9" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_10",
+            "OBJ_11",
+            "OBJ_12",
+            "OBJ_13",
+            "OBJ_14",
+            "OBJ_15",
+            "OBJ_16",
+            "OBJ_17",
+            "OBJ_18",
+            "OBJ_19"
+         );
+         name = "EPUBCore";
+         path = "EPUBCore";
+         sourceTree = "<group>";
+      };
+      "OBJ_91" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_92",
+            "OBJ_93"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_92" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_93" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_94" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_95"
+         );
+      };
+      "OBJ_95" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_97" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_98",
+            "OBJ_99"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_98" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/FolioReaderKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FolioReaderKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "FolioReaderKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_99" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ZipArchive/SSZipArchive/include"
+            );
+            INFOPLIST_FILE = "FolioReaderKit.xcodeproj/FolioReaderKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FolioReaderKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "FolioReaderKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Release";
+      };
+      "ZipArchive::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_169";
+         buildPhases = (
+            "OBJ_172"
+         );
+         dependencies = (
+         );
+         name = "ZipArchivePackageDescription";
+         productName = "ZipArchivePackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "ZipArchive::ZipArchive" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_143";
+         buildPhases = (
+            "OBJ_146",
+            "OBJ_163",
+            "OBJ_167"
+         );
+         dependencies = (
+         );
+         name = "ZipArchive";
+         productName = "ZipArchive";
+         productReference = "ZipArchive::ZipArchive::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "ZipArchive::ZipArchive::Product" = {
+         isa = "PBXFileReference";
+         path = "ZipArchive.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+   };
+   rootObject = "OBJ_1";
 }
